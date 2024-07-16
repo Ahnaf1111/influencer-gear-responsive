@@ -158,6 +158,64 @@ font-size: 1rem;
 font-weight: 700;
 
 }
+/* feature */
+.feature{
+    display: flex;
+    gap: 96px;
+    align-items: center;
+}
+.feature-text{
+    max-width: 610px;
+}
+.feature-text>h3{
+    color: #0A0826;
+font-family: Poppins;
+font-size: 2.37rem;
+font-weight: 700;
+line-height: 60px;
+}
+.feature-text>p{
+    color: #6C6C6C;
+font-family: Poppins;
+font-size: 1rem;
+font-weight: 700;
+line-height: 28px;
+margin-top: 16px;
+margin-bottom: 16px;
+}
+/* footer */
+.footer-text{
+    max-width: 262px;
+    text-align: center;
+    margin: 50px auto 0;
+    padding: 50px 0;
+    color: #FFF;
+}
+.footer-text>h3{
+    color: #FFF;
+font-family: Poppins;
+font-size: 1.4rem;
+font-weight: 700;
+}
+.footer-text>p{
+    color: #D9DBE1;
+font-family: Manrope;
+font-size: 0.9rem;
+font-weight: 700;
+line-height: 24px;
+}
+.footer-text>div{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 17px;
+}
+footer{
+    background: #0A0826;
+    margin: 96px auto 0px;
+    
+    
+}
 
 
 
@@ -182,6 +240,9 @@ font-weight: 700;
     .banner-text{
         text-align: center;
     }
+    .banner-img>img{
+        width: 100%;
+    }
     
     /* sponsor */
     .sponsor{
@@ -192,6 +253,16 @@ font-weight: 700;
     .card-container{
         grid-template-columns: 1fr;
     }
+    /* feature */
+    .feature{
+        flex-direction: column-reverse;
+    }
+    .feature-img>img{
+        width: 100%;
+    }
+
+
+
 }
 @media screen and (min-width:577px) and (max-width:992px){
     /* nav */
@@ -225,5 +296,9 @@ font-weight: 700;
     .card-9{
         grid-column: 1/span 2;
         text-align: center;
+    }
+    .feature{
+        flex-direction: column-reverse;
+
     }
 }
